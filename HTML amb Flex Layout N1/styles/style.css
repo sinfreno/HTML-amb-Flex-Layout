@@ -1,0 +1,149 @@
+
+/* bloque 1 */
+header {
+    background-color: black;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.navegador {
+    background-color: red;
+    display: flex;
+    padding: 10px;
+}
+
+.nav1 {
+    background-color: blueviolet;
+    margin: 10px;
+    height: 20px;
+    flex-grow: 1;
+
+}
+.nav2 {
+    background-color: blueviolet;
+    margin: 10px;
+    height: 20px;
+    flex-grow: 5;
+
+}
+
+.cabecera {
+    background-color: blue;
+    display: flex;
+    margin-top: 10px;
+}
+.cab1 {
+    background-color: orange;
+    margin: 20px;
+    height: 20px;
+    flex-grow: 1;
+
+}
+
+/* Bloque 2 */
+
+main {
+    display: flex;
+    background-color: black;
+    margin: 20px;
+
+}
+
+.blog {
+    background-color: red;
+    display: flex;
+    flex-grow: 3;
+    margin: 20px 10px 20px 20px;
+    padding: 10px;
+    flex-direction: column;
+
+}
+
+.ent1, .ent2 {
+    display: flex;
+}
+
+
+.ent {
+    background-color: lightskyblue;
+    margin: 10px;
+    flex-grow: 1;
+    height: 20px;
+}
+
+.sol {
+    background-color: green;
+    margin: 10px;
+    flex-grow: 1;
+    height: 20px;
+}
+
+.sidebar {
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 20px 20px 20px 10px;
+    padding: 10px;
+}
+
+.sid {
+    background-color: #f1f1f1;
+    margin: 10px;
+    height: 20px;
+}
+
+/* Bloque 3 */
+
+footer {
+    background-color: black;
+    margin: 20px;
+    padding: 20px;
+    
+}
+.foot {
+    background-color:yellowgreen;
+    height: 20px;
+
+}
+
+/* Versión tablet */
+
+@media only screen and (max-width: 700px) {
+
+main{
+    flex-direction: column;
+    background-color: hotpink;
+}
+.blog{
+    margin: 20px 20px 10px 20px;
+}
+
+.sidebar {
+    margin: 10px 20px 20px 20px;
+}
+
+/* Versión móvil */
+
+@media only screen and (max-width: 500px) {
+
+    main{
+        flex-direction: column;
+        background-color: black;
+    }
+    .nav2 {
+        flex-grow: 2;
+    
+    }
+    .blog{
+        margin: 20px 20px 10px 20px;
+    }
+    
+    .sidebar {
+        margin: 10px 20px 20px 20px;
+    }
+
+}
+
+

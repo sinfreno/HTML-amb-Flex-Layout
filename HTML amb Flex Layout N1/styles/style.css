@@ -1,9 +1,15 @@
 
+
+.container{
+    margin: 20px;
+    width: 1000px;
+    margin: auto;
+
+}
 /* bloque 1 */
 header {
     background-color: black;
     padding: 20px;
-    margin: 20px;
 
 }
 
@@ -46,7 +52,7 @@ header {
 main {
     display: flex;
     background-color: black;
-    margin: 20px;
+    margin: 20px 0;
 
 }
 
@@ -98,7 +104,6 @@ main {
 
 footer {
     background-color: black;
-    margin: 20px;
     padding: 20px;
     
 }
@@ -110,7 +115,7 @@ footer {
 
 /* Versión tablet */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:  768px) {
 
 main{
     flex-direction: column;
@@ -124,9 +129,15 @@ main{
     margin: 10px 20px 20px 20px;
 }
 
+.container{
+    width: 100%;
+}
+
+}
+
 /* Versión móvil */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 576px) {
 
     main{
         flex-direction: column;
@@ -142,6 +153,9 @@ main{
     
     .sidebar {
         margin: 10px 20px 20px 20px;
+    }
+    .container{
+        width: 100%;
     }
 
 }

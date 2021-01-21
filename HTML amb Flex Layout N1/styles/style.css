@@ -13,6 +13,13 @@ img{
 }
 
 
+
+.container{
+    margin: 20px;
+    width: 1000px;
+    margin: auto;
+
+}
 /* bloque 1 */
 header {
     background-image: url(../images/fondo.jpg);
@@ -80,9 +87,11 @@ header {
 
 main {
     display: flex;
+
     background-color: lightgray;
     margin: 20px 0;
     padding: 10px;
+
 
 }
 

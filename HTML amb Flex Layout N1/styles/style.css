@@ -19,13 +19,6 @@ a:hover {
     font-style: italic;
 }
 
-
-.container{
-    margin: 20px;
-    width: 1000px;
-    margin: auto;
-
-}
 /* bloque 1 */
 header {
     background-image: url(../images/fondo.jpg);

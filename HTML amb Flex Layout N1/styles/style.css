@@ -12,6 +12,12 @@ img{
 
 }
 
+/* Efectos */
+
+a:hover {
+    background-color: tomato;
+    font-style: italic;
+}
 
 
 .container{
@@ -24,9 +30,12 @@ img{
 header {
     background-image: url(../images/fondo.jpg);
     background-size: cover;
+    background-position: center;
     padding: 20px;
 
 }
+
+/* Menú */
 
 .navegador {
     display: flex;
@@ -41,7 +50,7 @@ header {
 }
 .nav2 {
     margin: 10px;
-    height: 50px;
+    height: 30px;
     flex-grow: 5;
     display: flex;
     align-items: flex-end;
@@ -50,6 +59,13 @@ header {
 
 .menu{
     margin-right: 20px;
+    height: 30px;
+    text-decoration: none;
+}
+    
+.menu a{
+    text-decoration:none;
+    color: black;
 }
 
 .nav3 {
@@ -97,9 +113,9 @@ main {
 
 .blog {
     display: flex;
-    flex-grow: 2;
     margin: 20px 10px 20px 20px;
     flex-direction: column;
+    flex-basis: 66%;
 
 }
 
@@ -107,67 +123,95 @@ main {
     display: flex;
 }
 
-
-.ent {
+/* Estilo de la caja de los artículos */
+.entA, .entB, .entC, .entD {
     margin: 10px;
     background-color: white;
     display:flex;
-    flex-grow: 1;
     flex-direction: column;
     padding: 5px;
+    flex-basis: 50%;
 
 }
 
-.imagen {
+.imagenA, .imagenB, .imagenC, .imagenD{
+    min-height: 150px;
+    display: flex;
+    position: relative;
+}
+
+/* Imagenes de los artículos */
+.imagenA{
+    background-image: url(../images/fuji.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagenB{
+    background-image: url(../images/himeji.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagenC{
+    background-image: url(../images/itsu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagenD{
+    background-image: url(../images/byodo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.imagenE{
     background-image: url(../images/fondo.jpg);
     background-size: cover;
-    height: 150px;
+    background-position: center;
     position: relative;
+    min-height: 150px;
+}
+
+.fecha{
+    position: absolute;
+    bottom: 0;
 }
 
 .categoria{
     background-color: tomato;
     height: 20px;
-    
+      
 }
 
-
-
-
-
+/* Articulo de ancho completo */
 .sol {
-    background-image: url(../images/fondo.jpg);
-    background-size: cover;
+    background-color: white;
     margin: 10px;
-    flex-grow: 1;
-    height: 300px;
+    min-height: 300px;
+    padding: 5px;
 }
 
 .sidebar {
-    background-color: yellow;
+    background-color: white;
     display: flex;
-    flex-grow: 1;
+    flex-basis: 33%;
     flex-direction: column;
-    margin: 20px 20px 20px 10px;
-    padding: 10px;
+    margin: 30px 30px 30px 20px;
 }
 
 .sid {
     margin: 10px;
-    height: 20px;
-    background-color: teal;
+    min-height: 20px;
+    background-color: lightgray;
 }
 
 /* Bloque 3 */
 
 footer {
-    background-color: black;
+    background-color: lightgray;;
     padding: 20px;
     
 }
 .foot {
-    background-color:yellowgreen;
-    height: 20px;
+    background-color: white;
+    min-height: 20px;
 
 }
 
@@ -184,7 +228,7 @@ main{
 }
 
 .sidebar {
-    margin: 10px 20px 20px 20px;
+    margin: 20px 30px 30px 30px;
 }
 
 .container{
@@ -210,7 +254,7 @@ main{
     }
     
     .sidebar {
-        margin: 10px 20px 20px 20px;
+        margin: 20px 30px 30px 30px;
     }
     .container{
         width: 100%;
